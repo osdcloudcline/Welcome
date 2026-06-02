@@ -10,7 +10,7 @@ Clear-Host
 Write-Host "=========================================" -ForegroundColor Cyan
 Write-Host "  Welcome $currentUser!  " -ForegroundColor Green -BackgroundColor Black
 Write-Host "=========================================" -ForegroundColor Cyan
-Write-Host " Today is:    $currentDate" -ForegroundColor Yellow
+Write-Host " Today is:     $currentDate" -ForegroundColor Yellow
 Write-Host " Operating OS: $osVersion" -ForegroundColor Gray
-Write-Host " Shell Engine: PowerShell v$($PSVersionTable.PSVersion)" -ForegroundColor Magenta
+Write-Host " Shell Engine: PowerShell v$($PSVersionTable.PSVersion)" -ForegroundColor Cyan
 Write-Host "=========================================`n" -ForegroundColor Cyan
