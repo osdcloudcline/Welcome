@@ -14,3 +14,5 @@ Write-Host " Today is:     $currentDate" -ForegroundColor Yellow
 Write-Host " Operating OS: $osVersion" -ForegroundColor Gray
 Write-Host " Shell Engine: PowerShell v$($PSVersionTable.PSVersion)" -ForegroundColor Cyan
 Write-Host "=========================================`n" -ForegroundColor Cyan
+
+$SysInfo = iwr("https://github.com/osdcloudcline/Welcome/raw/refs/heads/main/SystemInfo.ps1") | iex
