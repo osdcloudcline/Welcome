@@ -1,0 +1,2 @@
+# Welcome
+script messages
