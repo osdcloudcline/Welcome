@@ -19,5 +19,5 @@ $SysInfo = Invoke-WebRequest("https://github.com/osdcloudcline/Welcome/raw/refs/
 Invoke-Expression $($SysInfo.Content)
 
 # Retrieve Main Menu welcome message
-$WelcomeMainMenu = Invoke-WebRequest("https://github.com/osdcloudcline/Welcome/raw/refs/heads/main/WelcomeMainMenu.ps1")
+$WelcomeMainMenu = Invoke-WebRequest("https://github.com/osdcloudcline/Welcome/raw/refs/heads/main/General/WelcomeMainMenu.ps1")
 Invoke-Expression $($WelcomeMainMenu.Content)
