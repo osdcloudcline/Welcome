@@ -7,12 +7,12 @@ $currentDate = Get-Date -Format "dddd, MMMM dd, yyyy"
 Clear-Host
 
 # Render the welcome message with colors
-Write-Host              "=========================================" -ForegroundColor Cyan
-Write-Host                 "  Welcome $currentUser!  " -ForegroundColor Green -BackgroundColor Black
-Write-Host              "=========================================" -ForegroundColor Cyan
-Write-Host                 " Today is:     $currentDate" -ForegroundColor Yellow
-Write-Host                 " Shell Engine: PowerShell v$($PSVersionTable.PSVersion)" -ForegroundColor Cyan
-Write-Host             "=========================================`n" -ForegroundColor Cyan
+Write-Host "=========================================" -ForegroundColor Cyan
+Write-Host "  Welcome $currentUser!  " -ForegroundColor Green -BackgroundColor Black
+Write-Host "=========================================" -ForegroundColor Cyan
+Write-Host " Today is:     $currentDate" -ForegroundColor Yellow
+Write-Host " Shell Engine: PowerShell v$($PSVersionTable.PSVersion)" -ForegroundColor Cyan
+Write-Host "=========================================`n" -ForegroundColor Cyan
 
 # Retrive System Information
 $SysInfo = Invoke-WebRequest("https://github.com/osdcloudcline/Welcome/raw/refs/heads/main/SystemInfo.ps1") 
