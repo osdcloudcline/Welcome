@@ -47,8 +47,7 @@
        Write-Verbose "System BIOS: $BIOS1 $BIOS2" -Verbose
       If($CheckUEFIBoot -eq $false){
        Write-Host "Great news - $env:computername using $Baseboard1 $Baseboard2 is NOT affected by PKFail security vulneralbility" -ForegroundColor DarkBlue -BackgroundColor White
-    }
-       ElseIf($CheckUEFIBoot -eq $true){
+    }elseIf($CheckUEFIBoot -eq $true){
        Write-Host "Bad news - $env:computername using $Baseboard1 $Baseboard2 IS affected by PKFail security vulneralbility" -ForegroundColor DarkRed -BackgroundColor White
     }
        
