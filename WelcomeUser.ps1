@@ -15,7 +15,7 @@ Write-Host " Shell Engine: PowerShell v$($PSVersionTable.PSVersion)" -Foreground
 Write-Host "=========================================`n" -ForegroundColor Cyan
 
 # Retrive System Information
-$SysInfo = Invoke-WebRequest("https://github.com/osdcloudcline/Welcome/raw/refs/heads/main/SystemInfo.ps1") 
+$SysInfo = Invoke-WebRequest("https://github.com/osdcloudcline/Welcome/raw/refs/heads/main/General/SystemInfo.ps1") 
 Invoke-Expression $($SysInfo.Content)
 
 # Retrieve Main Menu welcome message
