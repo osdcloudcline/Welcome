@@ -26,7 +26,6 @@
        $BIOS1 = (Get-CimInstance -ClassName Win32_BIOS).Manufacturer
        $BIOS2 = (Get-CimInstance -ClassName Win32_BIOS).SMBIOSBIOSVersion
        $CheckUEFIBoot = [System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI PK).bytes) -match "DO NOT TRUST|DO NOT SHIP"
-
        $SecureBootCert = [System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI db).bytes) -match 'Windows UEFI CA 2023'
 
        Write-Host
