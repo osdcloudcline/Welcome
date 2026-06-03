@@ -29,7 +29,7 @@ Write-Host '     - Microsoft Visual C++ Resistributables 2005-2015+ x64         
 Write-Host '     - Microsoft Visual C++ Resistributables 2005-2015+ x86                   ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - Microsoft Visual C++ Resistributable 2017                              ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - Oracle JAVA 8.0                                                        ' -ForegroundColor DarkBlue -BackgroundColor White
-Write-Host '     - microsoft XNA Framework 4.0                                            ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '     - Microsoft XNA Framework 4.0                                            ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - Open AL                                                                ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - Microsoft DirectX 9.0                                                  ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - Install Client and Server OS Roles                                     ' -ForegroundColor DarkBlue -BackgroundColor White
