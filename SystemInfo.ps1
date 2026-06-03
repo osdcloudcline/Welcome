@@ -27,6 +27,8 @@
        $BIOS2 = (Get-CimInstance -ClassName Win32_BIOS).SMBIOSBIOSVersion
        $CheckUEFIBoot = [System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI PK).bytes) -match "DO NOT TRUST|DO NOT SHIP"
 
+       $SecureBootCert = [System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI db).bytes) -match 'Windows UEFI CA 2023'
+
        Write-Host
        Write-Host         "Running Computer Info:" -ForegroundColor Green 
        Write-Verbose "System Hostname: $PCName" -Verbose
@@ -49,6 +51,10 @@
        Write-Host "Great news - $env:computername using $Baseboard1 $Baseboard2 is NOT affected by PKFail security vulneralbility" -ForegroundColor DarkBlue -BackgroundColor White
     }elseIf($CheckUEFIBoot -eq $true){
        Write-Host "Bad news - $env:computername using $Baseboard1 $Baseboard2 IS affected by PKFail security vulneralbility" -ForegroundColor DarkRed -BackgroundColor White
+    }elseIf($SecureBootCert -eq $false){
+       Write-Host "Great news - $env:computername using $Baseboard1 $Baseboard2 has a valid Secure Boot certificate" -ForegroundColor DarkBlue -BackgroundColor White
+    }elseIf($SecureBootCert -eq $true){
+       Write-Host "Bad news - $env:computername using $Baseboard1 $Baseboard2 has an expiring Secure Boot certificate" -ForegroundColor DarkRed -BackgroundColor White
     }
        
        Write-Host 
