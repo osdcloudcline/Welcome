@@ -16,4 +16,5 @@ Write-Host " Shell Engine: PowerShell v$($PSVersionTable.PSVersion)" -Foreground
 Write-Host "=========================================`n" -ForegroundColor Cyan
 
 # Retrive System Information
-$SysInfo = iwr("https://github.com/osdcloudcline/Welcome/raw/refs/heads/main/SystemInfo.ps1") | iex
+$SysInfo = Invoke-WebRequest("https://github.com/osdcloudcline/Welcome/raw/refs/heads/main/SystemInfo.ps1") 
+Invcoke-Expression $($SysInfo.Content)
