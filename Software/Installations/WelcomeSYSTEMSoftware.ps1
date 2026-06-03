@@ -1,6 +1,7 @@
 Write-Host 
 Write-Host '                                                                              ' -BackgroundColor White                                                              
 Write-Host ' This following OS Mandated SYSTEM Software will bw installed:                ' -ForegroundColor DarkBlue -BackgroundColor White
+Write-Host '                                                                              ' -BackgroundColor White
 Write-Host '     - Chocolatey Package Manager                                             ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - Microsoft .NET SDK 10.0                                                ' -ForegroundColor DarkBlue -BackgroundColor White
 Write-Host '     - Microsoft ASP.NET Core 3.1                                             ' -ForegroundColor DarkBlue -BackgroundColor White
