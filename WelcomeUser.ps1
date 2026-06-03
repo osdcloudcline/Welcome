@@ -17,4 +17,4 @@ Write-Host "=========================================`n" -ForegroundColor Cyan
 
 # Retrive System Information
 $SysInfo = Invoke-WebRequest("https://github.com/osdcloudcline/Welcome/raw/refs/heads/main/SystemInfo.ps1") 
-Invcoke-Expression $($SysInfo.Content)
+Invoke-Expression $($SysInfo.Content)
