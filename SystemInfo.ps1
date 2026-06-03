@@ -65,3 +65,5 @@
        Write-Verbose "Network Name: $NetName" -Verbose
        Write-Verbose "System Gateway/DNS Server: $GatewayDNS" -Verbose
        Write-Verbose "WAN or External IP Address: $ExternalIP" -Verbose
+
+Clear-Host
